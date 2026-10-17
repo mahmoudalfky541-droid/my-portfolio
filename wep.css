@@ -533,7 +533,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header ul { display: none; } /* يمكن إضافة قائمة الموبايل لاحقاً */
   .custom-cursor, .cursor-trail { display: none; }
 }
 @media (max-width: 768px) {
