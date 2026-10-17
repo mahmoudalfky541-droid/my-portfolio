@@ -536,3 +536,26 @@ body {
   .header ul { display: none; } /* يمكن إضافة قائمة الموبايل لاحقاً */
   .custom-cursor, .cursor-trail { display: none; }
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1.2rem 1rem;
+    border-radius: 20px;
+    gap: 1rem;
+    top: 1rem;
+  }
+
+  .header ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .header a {
+    font-size: 1.2rem;
+  }
+
+  .custom-cursor, .cursor-trail { display: none; }
+}
