@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eng. Mahmoud El-Fky | Portfolio</title>
+  
+  <!-- استدعاء الخطوط الفخمة والأيقونات -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Cinzel:wght@600;700;900&family=Poppins:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- سطر استدعاء الخطوط الفخمة (Google Fonts): -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- ربط ملف الـ CSS -->
+  <link rel="stylesheet" href="wep.css">
+</head>
+<body>
+
+  <!-- مؤشر الماوس الفاخر Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- 1. شاشة التحميل السينمائية -->
+  <div class="downlode-page" id="preloader">
+    <canvas id="particleCanvas"></canvas>
+    <div class="loader-backdrop"></div>
+
+    <div class="main-content">
+      <div class="text-container">
+        <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+        <span class="space"></span>
+        <span>N</span><span>O</span><span>W</span>
+      </div>
+
+      <div class="loader-progress-box">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+        <p class="counter-text"><span id="loaderCount">0</span>%</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. الهيدر العائم الفاخر (Floating Glass Header) -->
+  <header class="header">
+    <div class="logo-box">
+      <div class="logo-ring">
+        <img src="logo.jpg" alt="Mahmoud Logo" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150'">
+      </div>
+      <span class="logo-text">EL-FKY</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about"><i class="fa-solid fa-user"></i> عني</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-code"></i> مهاراتي</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-cubes"></i> أعمالي</a></li>
+        <li><a href="https://wa.me/201094767072?s=t" class="nav-btn"><i class="fa-solid fa-paper-plane"></i> تواصل معي</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 3. القسم الرئيسي (Hero Section) -->
+  <main class="home-page" id="about">
+    <div class="hero-bg-lights">
+      <div class="light-orb orb-1"></div>
+      <div class="light-orb orb-2"></div>
+    </div>
+
+    <!-- النصف الخاص بالنص -->
+    <div class="text-section">
+      <div class="badge-tag"><i class="fa-solid fa-crown"></i> المفهوم المستقبلي</div>
+      
+      <h1 class="hero-title">
+        Eng.<br>
+        <span class="span-gold">Ma7moud</span>
+        <span class="elfky-text">El-Fky</span>
+      </h1>
+
+      <p class="sub-headline">مهندس برمجيات ومطور واجهات </p>
+
+      <div class="cta-group">
+        <button class="btn-primary">
+          <span>اقرأ المزيد</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <a href="#projects" class="btn-secondary">
+          <span>مشاهدة المشاريع</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- النصف الخاص بالصورة -->
+    <div class="image-section">
+      <div class="image-frame-wrap">
+        <div class="golden-border-glow"></div>
+        <div class="image-container">
+          <img src="WhatsApp Image 2026-07-19 at 2.41.45 PM.jpeg" alt="Eng Mahmoud El-Fky" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800'">
+        </div>
+        
+        <!-- كارت إحصائيات عائم فوق الصورة -->
+        <div class="floating-badge badge-experience">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <h4>100%</h4>
+            <p>احترافية ودقة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 4. قسم الكروت والمهارات (Cards Section) -->
+  <section class="cards-section" id="skills">
+    <div class="section-title">
+      <h2>مميزات <span>المشروع</span></h2>
+      <p>تصميم متطور يجمع بين السرعة، الأناقة، والتفاعل الحركي الفريد</p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>تأثيرات زجاجية</h3>
+        <p>تصميم Glassmorphism أصلية مع ظلال ذهبية متوهجة تعطي انطباعاً ملكياً.</p>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="card-item active-card">
+        <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>أداء صاروخي</h3>
+        <p>انتقالات سلسة وسريعة تعمل بـ 60 إطاراً في الثانية على جميع الشاشات.</p>
+        <div class="card-glow"></div>
+      </div>
+
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3>متجاوب بالكامل</h3>
+        <p>تنسيق مرن ومتناسب تلقائياً مع الهواتف الذكية، الشاشات الكبيرة والشاشات اللوحية.</p>
+        <div class="card-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS Interactivity Script -->
+  <script>
+    // العداد التفاعلي لشاشة التحميل
+    document.addEventListener("DOMContentLoaded", () => {
+      let count = 0;
+      const countEl = document.getElementById("loaderCount");
+      const fillEl = document.getElementById("progressFill");
+      const preloader = document.getElementById("preloader");
+
+      const interval = setInterval(() => {
+        count += Math.floor(Math.random() * 8) + 2;
+        if (count > 100) count = 100;
+        
+        countEl.textContent = count;
+        fillEl.style.width = count + "%";
+
+        if (count === 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.classList.add("fade-out");
+            document.body.style.overflow = "auto";
+          }, 400);
+        }
+      }, 50);
+
+      // Custom Cursor Logic
+      const cursor = document.querySelector(".custom-cursor");
+      const trail = document.querySelector(".cursor-trail");
+
+      window.addEventListener("mousemove", (e) => {
+        cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+        setTimeout(() => {
+          trail.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+        }, 50);
+      });
+
+      // Canvas Background Particles
+      const canvas = document.getElementById("particleCanvas");
+      if (canvas) {
+        const ctx = canvas.getContext("2d");
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener("resize", () => {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        });
+
+        const particles = Array.from({ length: 45 }, () => ({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: Math.random() * 2 + 0.5,
+          color: Math.random() > 0.5 ? '#bf953f' : '#fcf6ba',
+          speedX: (Math.random() - 0.5) * 0.6,
+          speedY: (Math.random() - 0.5) * 0.6
+        }));
+
+        function animateCanvas() {
+          ctx.clearRect(0, 0, width, height);
+          particles.forEach(p => {
+            p.x += p.speedX;
+            p.y += p.speedY;
+
+            if (p.x < 0) p.x = width;
+            if (p.x > width) p.x = 0;
+            if (p.y < 0) p.y = height;
+            if (p.y > height) p.y = 0;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.globalAlpha = 0.5;
+            ctx.fill();
+          });
+          requestAnimationFrame(animateCanvas);
+        }
+        animateCanvas();
+      }
+    });
+  </script>
+
+</body>
+</html>
