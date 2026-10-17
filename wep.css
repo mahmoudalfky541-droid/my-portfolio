@@ -532,9 +532,7 @@ body {
   .floating-badge { right: 10px; bottom: -10px; }
 }
 
-@media (max-width: 768px) {
-  .custom-cursor, .cursor-trail { display: none; }
-}
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
